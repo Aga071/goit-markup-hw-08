@@ -1,6 +1,6 @@
 .container {
-  max-width: 1200px;
-  min-width: 340px;
+  max-width: 480px;
+  min-width: 320px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -14,5 +14,15 @@
     justify-content: center;
     column-gap: 8px;
     padding-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }

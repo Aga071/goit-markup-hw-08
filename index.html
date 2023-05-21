@@ -13,43 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-
-    <style>
-      @media (max-width: 767px) {
-        .navigation__list {
-          display: none;
-        }
-        .navigation__list--contact {
-          display: none;
-        }
-      }
-
-      @media (min-width: 768px) {
-        .button__menu {
-          display: none;
-        }
-      }
-
-      @media (max-width: 768px) {
-        .section__list {
-          flex-direction: column;
-          align-items: center;
-        }
-        .section__icon {
-          width: 450px;
-        }
-        .section__heading--lorem {
-          text-align: center;
-        }
-        .section__paragraph {
-          align-items: center;
-          width: 450px;
-        }
-        .section__hidden {
-          display: none;
-        }
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <header class="header-border">
@@ -196,9 +160,11 @@
                 srcset="
                   images/img1-4-354.jpg 354w,
                   images/img1-4-450.jpg 450w,
-                  images/img1-4-810.jpg 810w
+                  images/img1-4-540.jpg 540w,
+                  images/img1-4-708.jpg 708w
+                  images/img1-4-900.jpg 900w,
                 "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width:320) 450px"
               />
               <h3 class="team__name">John Doe</h3>
               <p class="team__workplace">Product Designer</p>
@@ -339,7 +305,7 @@
       <section class="section">
         <div class="container">
           <h2 class="section__heading--secondary">Nasi klienci</h2>
-          <ul class="section__list">
+          <ul class="section__list section__list--wrap section__list--row">
             <li>
               <svg class="section__icon--customers" width="106" height="60">
                 <use href="images/icons.svg#icon-Logo"></use>
@@ -375,7 +341,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container container--text-start footer__list">
+      <div class="container footer__list">
         <div>
           <ul>
             <li>
