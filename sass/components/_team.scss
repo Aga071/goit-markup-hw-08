@@ -4,6 +4,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  &__img-container {
+    width: 450px;
+  }
+
   &__name {
     line-height: 1.1875;
     font-weight: 500;
@@ -12,5 +16,15 @@
   &__workplace {
     line-height: 1.1875;
     padding-bottom: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .team__img-container {
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .team__img-container {
+    width: 270px;
   }
 }
