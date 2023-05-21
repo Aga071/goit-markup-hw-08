@@ -1,0 +1,16 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  margin: auto;
+  background-color: var(--background-color-primary-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  text-align: right;
+  z-index: 2;
+
+  transition: transform 3000ms linear;
+  transform: scale(1);
+}
+/* animation-name: animate50;animation-duration: 3000ms;animation-timing-function: linear; */

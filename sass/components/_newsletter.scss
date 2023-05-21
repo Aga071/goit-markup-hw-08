@@ -1,0 +1,35 @@
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  &__input {
+    color: var(--color-contact-light);
+    width: 358px;
+    background-color: var(--background-color-primary-dark);
+    border: 1px solid #ffffff30;
+
+    border-radius: 4px;
+    padding: 15px 0 15px 16px;
+  }
+
+  &__button {
+    color: var(--color-logo-light);
+    font-family: inherit;
+    font-weight: 700;
+    background-color: var(--color-logo);
+    border: none;
+
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 13px 28px 13px 42px;
+  }
+
+  &__icon {
+    fill: var(--color-logo-light);
+  }
+}

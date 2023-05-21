@@ -1,0 +1,56 @@
+.button {
+  color: var(--color-logo-light);
+  font-family: inherit;
+  font-weight: 700;
+  background-color: var(--color-logo);
+  border: none;
+
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+  padding: 16px 45px;
+
+  &__page-filter {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    line-height: 1.625;
+    background-color: var(--background-color-secondary-light);
+    padding: 6px 20px;
+
+    &:hover,
+    &:focus {
+      color: var(--color-logo-light);
+      background-color: var(--color-logo);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__questionnaire {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 16px 76px;
+    align-self: center;
+  }
+
+  &__close {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #00000010;
+    border-radius: 50%;
+    background-color: var(--background-color-primary-light);
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+  &__menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+
+    &:hover,
+    &:focus {
+      fill: var(--color-logo);
+      transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.location,
+.contact-details-secondary {
+  color: var(--color-logo-light);
+  font-size: 14px;
+  line-height: 1.714;
+  font-style: normal;
+  padding-bottom: 9px;
+
+  &__contact-details {
+    color: var(--color-contact-light);
+
+    &:hover,
+    &:focus {
+      color: var(--color-logo);
+      fill: var(--color-logo);
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

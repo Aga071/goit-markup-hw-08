@@ -1,0 +1,31 @@
+.icon {
+  padding-top: 12px;
+  width: 44px;
+  height: 44px;
+  fill: var(--color-icons);
+  border-radius: 50%;
+  cursor: pointer;
+
+  &__footer {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-logo);
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--fill {
+      fill: var(--color-logo-light);
+      margin-left: 12px;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-logo);
+    fill: var(--background-color-primary-light);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
