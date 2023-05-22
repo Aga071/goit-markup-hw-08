@@ -102,27 +102,27 @@
     display: inline-flex;
     width: 370px;
     height: 294px;
+    &--title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      background: rgba(47, 48, 58, 0.8);
+      color: var(--color-logo-light);
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.143;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
-  &--title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background: rgba(47, 48, 58, 0.8);
-    color: var(--color-logo-light);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-align: center;
-    text-transform: uppercase;
+  &__hidden {
+    display: none;
   }
-}
-&__hidden {
-  display: none;
 }
 
 @media (min-device-pixel-ratio: 2),
